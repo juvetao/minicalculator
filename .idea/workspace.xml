@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f29a00ca-2a80-4386-898e-42bcfa77417f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/se/ecutb/cheng/MiniTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PkZ1ZWhd0dyKtj5qbZzG8ariab" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Minicalculator">
+    <configuration name="Minicalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.ecutb.cheng.Minicalculator" />
+      <module name="minicalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.ecutb.cheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniTest.test_addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minicalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.ecutb.cheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.ecutb.cheng" />
+      <option name="MAIN_CLASS_NAME" value="se.ecutb.cheng.MiniTest" />
+      <option name="METHOD_NAME" value="test_addition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniTest.test_division" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minicalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.ecutb.cheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.ecutb.cheng" />
+      <option name="MAIN_CLASS_NAME" value="se.ecutb.cheng.MiniTest" />
+      <option name="METHOD_NAME" value="test_division" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniTest.test_multiplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minicalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.ecutb.cheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.ecutb.cheng" />
+      <option name="MAIN_CLASS_NAME" value="se.ecutb.cheng.MiniTest" />
+      <option name="METHOD_NAME" value="test_multiplication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniTest.test_subtraction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minicalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.ecutb.cheng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.ecutb.cheng" />
+      <option name="MAIN_CLASS_NAME" value="se.ecutb.cheng.MiniTest" />
+      <option name="METHOD_NAME" value="test_subtraction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Minicalculator" />
+        <item itemvalue="JUnit.MiniTest.test_division" />
+        <item itemvalue="JUnit.MiniTest.test_multiplication" />
+        <item itemvalue="JUnit.MiniTest.test_subtraction" />
+        <item itemvalue="JUnit.MiniTest.test_addition" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f29a00ca-2a80-4386-898e-42bcfa77417f" name="Default Changelist" comment="" />
+      <created>1566419840551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566419840551</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/minicalculator$MinicalculatorTest.ic" NAME="MinicalculatorTest Coverage Results" MODIFIED="1566462931302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>se.ecutb.cheng.*</FILTER>
+    </SUITE>
+  </component>
+</project>
