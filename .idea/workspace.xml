@@ -146,6 +146,14 @@
       <option name="presentableId" value="Default" />
       <updated>1566419840551</updated>
     </task>
+    <task id="LOCAL-00001" summary="Upated by changing for-loop to while">
+      <created>1566511046858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566511046858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,14 +161,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Upated by changing for-loop to while" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upated by changing for-loop to while" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

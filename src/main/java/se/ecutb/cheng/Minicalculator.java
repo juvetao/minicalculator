@@ -24,46 +24,82 @@ public class Minicalculator {
                 switch (operator) {
                     case '+':
                         //input two numbers
-                        System.out.println("Please enter the 1st number:");
-                        int number1 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 1st number you enter is: " + number1);
-                        System.out.println("Please enter the 2nd number:");
-                        int number2 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 2nd number you enter is: " + number2);
+                        int number1 = inputNumbers();
+                        int number2 = inputNumbers();
+                        boolean onemorenumber = true;
                         answer = addition(number1, number2);
-                        System.out.println(number1 + " + " + number2 + " = " + answer);
+                        System.out.println("Do you want to enter one more number to calculate? y/n");
+                        String onemorenumberyn = scanner.nextLine();
+                        char omn = onemorenumberyn.charAt(0);
+                        while (onemorenumber) {
+                            if (omn == 'y') {
+                                number1 = inputNumbers();
+                                answer = addition(answer, number1);
+                                //System.out.println(number1 + " + " + number2 + " = " + answer);
+                                System.out.println("answer: " + answer);
+                                System.out.println("Enter one more? y/n");
+                                String onemore = scanner.nextLine();
+                                char om = onemore.charAt(0);
+                                if (om == 'y'){
+                                    int number = inputNumbers();
+                                    answer = addition(answer, number);
+                                    System.out.println("answer: " + answer);
+                                }else if (om == 'n'){
+                                    //System.out.println("answer: " + answer);
+                                    onemorenumber = false;
+                                }
+                                //Here is the bug...
+                            } else if (omn == 'n') {
+                                System.out.println(number1 + " + " + number2 + " = " + answer);
+                                onemorenumber = false;
+                            }
+                        }
                         break;
                     case '-':
                         //input two numbers
-                        System.out.println("Please enter the 1st number:");
-                        int number3 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 1st number you enter is: " + number3);
-                        System.out.println("Please enter the 2nd number:");
-                        int number4 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 2nd number you enter is: " + number4);
+                        int number3 = inputNumbers();
+                        int number4 = inputNumbers();
+                        boolean onemorenumber1 = true;
                         answer = subtraction(number3, number4);
-                        System.out.println(number3 + " - " + number4 + " = " + answer);
+                        System.out.println("Do you want to enter one more number to calculate? y/n");
+                        String onemorenumberyn1 = scanner.nextLine();
+                        char omn1 = onemorenumberyn1.charAt(0);
+                        while (onemorenumber1) {
+                            if (omn1 == 'y') {
+                                number3 = inputNumbers();
+                                answer = subtraction(answer,number3);
+                                System.out.println("answer: " + answer);
+                                System.out.println("Enter one more? y/n");
+                                String onemore = scanner.nextLine();
+                                char om = onemore.charAt(0);
+                                if (om == 'y'){
+                                    int number = inputNumbers();
+                                    answer = subtraction(answer, number);
+                                    System.out.println("answer: " + answer);
+                                }else if (om == 'n'){
+                                    //System.out.println("answer: " + answer);
+                                    onemorenumber1 = false;
+                                }
+                                //Here is the bug...
+                            } else if (omn1 == 'n') {
+                                //answer = subtraction(number3, number4);
+                                System.out.println(number3 + " - " + number4 + " = " + answer);
+                                onemorenumber1 = false;
+                            }
+                        }
                         break;
                     case '*':
                         //input two numbers
-                        System.out.println("Please enter the 1st number:");
-                        int number5 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 1st number you enter is: " + number5);
-                        System.out.println("Please enter the 2nd number:");
-                        int number6 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 2nd number you enter is: " + number6);
-                        answer = multiplication(number5, number6);
+                        int number5 = inputNumbers();
+                        int number6 = inputNumbers();
+                        answer = multiplication(number5,number6);
                         System.out.println(number5 + " * " + number6 + " = " + answer);
                         break;
                     case '/':
                         //input two numbers
-                        System.out.println("Please enter the 1st number:");
-                        int number7 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 1st number you enter is: " + number7);
-                        System.out.println("Please enter the 2nd number:");
-                        int number8 = Integer.parseInt(scanner.nextLine());
-                        System.out.println("The 2nd number you enter is: " + number8);
-                        answer = division(number7, number8);
+                        int number7 = inputNumbers();
+                        int number8 = inputNumbers();
+                        answer = division(number7,number8);
                         System.out.println(number7 + " / " + number8 + " = " + answer);
                         break;
                     default:
@@ -96,11 +132,40 @@ public class Minicalculator {
         return result;
     }
 
+    //Select Operator
     public static char operatorSelect(){
+        boolean keepAlive = true;
+        char operator = ' ';
+        while (keepAlive){
         System.out.println("Please select a basic operation among +-*/.");
+        //exception: enter nothing (press "Enter" only)
+        try{
         String operatorInput = scanner.nextLine();
         //String converts to char
-        char operator = operatorInput.charAt(0);
+        operator = operatorInput.charAt(0);
+        keepAlive = false;}
+        catch (StringIndexOutOfBoundsException sioobe){
+            System.out.println(sioobe.getMessage());}
+        }
         return operator;
+    }
+
+    //Input numbers
+    public static int inputNumbers() {
+        boolean keepAlive = true;
+        int number = 0;
+        while(keepAlive) {
+            System.out.println("Please enter a number:");
+            //exception: enter a letter instead
+            try {
+                number = Integer.parseInt(scanner.nextLine());
+                keepAlive = false;
+                System.out.println("The number you enter is: " + number);
+            } catch (NumberFormatException nfe) {
+                System.out.println(nfe.getMessage());
+                System.out.println("Only numbers are allowed!");
+            }
+        }
+        return number;
     }
 }
